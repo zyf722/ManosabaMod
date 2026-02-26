@@ -54,7 +54,7 @@ namespace ManosabaLoader
             var cfg = ProjectConfigurationProvider.LoadOrDefault<ScriptsConfiguration>();
             cfg.CompilerLocalization.AddExistingCommands();
             cfg.CompilerLocalization.AddExistingFunctions();
-            Compiler.Initialize();
+            //Compiler.Initialize();
             meta.EntryScript = cfg.StartGameScript;
             meta.TitleScript = cfg.TitleScript;
             ModMetadataGeneratorLogMessage("Processing commands...");
